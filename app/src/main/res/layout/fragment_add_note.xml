@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.addNote">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="12dp"
+        tools:context=".NewNoteFragment">
+
+
+        <TextView
+            android:id="@+id/addNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:text="Add Note.."
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/addNoteTitle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Enter the title"
+            android:padding="12dp"
+            android:textSize="20sp"
+            android:layout_below="@id/addNote"
+            android:background="@drawable/border"
+            android:layout_marginTop="16dp"
+            android:maxLines="1"/>
+        <EditText
+            android:id="@+id/addNoteDesc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter the description"
+            android:gravity="top"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:background="@drawable/border"
+            android:layout_below="@id/addNoteTitle"
+            android:layout_marginTop="12dp" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>
